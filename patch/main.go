@@ -33,6 +33,7 @@ func main() {
 
 	r.GET("/users", func(c *gin.Context) {
 		c.JSON(http.StatusOK, Users)
+		return
 	})
 
 	r.PATCH("/users/:id", func(c *gin.Context) {
